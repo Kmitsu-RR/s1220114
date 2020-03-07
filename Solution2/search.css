@@ -1,0 +1,25 @@
+body {
+    font: 100;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 760px;
+}
+
+div.search_area {
+    border: solid 5px red;
+    width: 144px;
+    float: left;
+}
+
+div.teacher_list {
+    border: solid 5px red;
+    width: 570px;
+    float: right;
+}
+
+table.profile {
+    border: solid 3px green;
+    width: 565px;
+    margin: 2px;
+}

@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+
+<html lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="search.css">
+</head>
+
+<body>
+    <form action="cgi-bin/formmail.cgi" method="post">
+        <div class="main">
+            <div class="search_area">
+                <div>レッスン言語
+                    <select name="example">
+                    <option value="指定なし">指定なし</option>
+                    <option value="選択肢2">選択肢2</option>
+                    <option value="選択肢3">選択肢3</option>
+                </select>
+                </div>
+
+                <div>レッスンエリア
+                    <select name="example">
+                    <option value="指定なし">指定なし</option>
+                    <option value="選択肢2">選択肢2</option>
+                    <option value="選択肢3">選択肢3</option>
+                </select>
+                </div>
+
+                <div>
+                    <li>マンツーマン</li>
+                    <select name="example">
+                        <option value="指定なし">指定なし</option>
+                        <option value="選択肢2">選択肢2</option>
+                        <option value="選択肢3">選択肢3</option>
+                    </select>
+                </div>
+
+                <div>
+                    <li>性別</li>
+                    <select name="example">
+                    <option value="指定なし">指定なし</option>
+                    <option value="男">男</option>
+                    <option value="女">女</option>
+                </select>
+                </div>
+
+                <div>年齢
+                    <select name="example">
+                    <option value="指定なし">指定なし</option>
+                    <option value="選択肢2">選択肢2</option>
+                    <option value="選択肢3">選択肢3</option>
+                </select>
+                </div>
+
+                <button type="button" id="search" onclick="searchClick">
+                検索
+            </button>
+            </div>
+    </form>
+
+    <div class="teacher_list">
+        <table class="profile">
+            <tr>
+                <td><img src="./img/sugawara.jpg" width="128" height="128" alt="イラスト1" onclick="profileClick()"></td>
+                <td>
+                    <table>
+                        <tr>
+                            <th>名前:</th>
+                            <td>菅原直人</td>
+                        </tr>
+                        <tr>
+                            <th>性別:</th>
+                            <td>男</td>
+                        </tr>
+                        <tr>
+                            <th>年齢:</th>
+                            <td>24</td>
+                        </tr>
+                        <tr>
+                            <th>教えている言語:</th>
+                            <td>Java</td>
+                        </tr>
+                        <tr>
+                            <th>レッスンエリア:</th>
+                            <td>山形県</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <table class="profile">
+            <tr>
+                <td><img src="./img/suga.jpg" width="128" height="128" alt="イラスト2"></td>
+                <td>
+                    <table>
+                        <tr>
+                            <th>名前:</th>
+                            <td>菅直人</td>
+                        </tr>
+                        <tr>
+                            <th>性別:</th>
+                            <td>男</td>
+                        </tr>
+                        <tr>
+                            <th>年齢:</th>
+                            <td>24</td>
+                        </tr>
+                        <tr>
+                            <th>教えている言語:</th>
+                            <td>Python</td>
+                        </tr>
+                        <tr>
+                            <th>レッスンエリア:</th>
+                            <td>山形県</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <table class="profile">
+            <tr>
+                <td><img src="./img/nakayama.jpg" width="128" height="128" alt="イラスト3"></td>
+                <td>
+                    <table>
+                        <tr>
+                            <th>名前:</th>
+                            <td>中山菜乃子</td>
+                        </tr>
+                        <tr>
+                            <th>性別:</th>
+                            <td>女</td>
+                        </tr>
+                        <tr>
+                            <th>年齢:</th>
+                            <td>24</td>
+                        </tr>
+                        <tr>
+                            <th>教えている言語:</th>
+                            <td>C、Ruby</td>
+                        </tr>
+                        <tr>
+                            <th>レッスンエリア:</th>
+                            <td>東京都</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <table class="profile">
+            <tr>
+                <td><img src="./img/sakura.jpg" width="128" height="128" alt="イラスト4"></td>
+                <td>
+                    <table>
+                        <tr>
+                            <th>名前:</th>
+                            <td>紗倉まな</td>
+                        </tr>
+                        <tr>
+                            <th>性別:</th>
+                            <td>女</td>
+                        </tr>
+                        <tr>
+                            <th>年齢:</th>
+                            <td>27</td>
+                        </tr>
+                        <tr>
+                            <th>教えている言語:</th>
+                            <td>Java、JavaScript</td>
+                        </tr>
+                        <tr>
+                            <th>レッスンエリア:</th>
+                            <td>東京都</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </div>
+    <script src="search.js"></script>
+</body>
+
+</html>
